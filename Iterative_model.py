@@ -18,15 +18,14 @@ def plot_sprint(x, y, sprint_num):
     plt.legend()
     plt.show()
 
-# Agile approach: small increments (sprints)
 start_time, end_time, num_points = 0, 10, 100
 a, b, c = 0.5, -5, 20
 
-for sprint in range(1, 4):  # simulate 3 sprints
-    # each sprint tweaks coefficients slightly (like changing requirements)
+for sprint in range(1, 4):
     a += random.uniform(-0.05, 0.05)
     b += random.uniform(-0.2, 0.2)
     c += random.uniform(-0.5, 0.5)
     x_data, y_data = generate_weather_data(start_time, end_time, num_points, a, b, c)
     plot_sprint(x_data, y_data, sprint)
     print(f"Sprint {sprint}: Final Temperature = {y_data[-1]}")
+
