@@ -10,4 +10,4 @@ This Repo consistes of the weather modelling codes with respective to Waterfall_
 
 
 3. Agile model:
-     consists of a code which plots the weather conditions in matplot from the data with small increments 
+     consists of a code which plots the weather conditions in matplot from the data with respective to sprints.
