@@ -16,9 +16,8 @@ def plot_iteration(x, y, title):
     plt.ylabel('Temperature')
     plt.legend()
     plt.show()
-
-# Example: simulate multiple iterations (improving model each step)
-a_values = [0.3, 0.4, 0.5]   # refining coefficient a over iterations
+    
+a_values = [0.3, 0.4, 0.5]   # incrementing 'a' value
 b, c = -5, 20
 
 start_time, end_time, num_points = 0, 10, 100
